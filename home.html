@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Food Website</title>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="home.html" onclick="home()">Home</a>
+        <a id="product-link" href="product.html">Products</a>
+        <a id="payment-link" href="payment.html">Payment Settings</a>
+        <a id="contact-link" href="contact.html">Contacts</a>
+        <hr>
+        <a id="about-link" href="about.html">About</a>
+        <a href="login.html" onclick="about()">Log-In / Sign-Up</a>
+      
+      </div>
+   
+    </div>
+    <div class="content" id="content">
+        <h2>Welcome to the Onigashima's Web Page</h2>
+        <h3>This Website Were made by the Student's of Aclc College of Mandaue especially led by John Vincent Mirasol.</h3>
+        <h2>Mission</h2>
+       <p>Our mission at Onigashima's Cuisine is to satisfy taste buds with the authentic flavors of Japan, delivering exceptional quality and creative cooking in every bite. 
+    We aim to share the essence of Japanese cuisine while fostering a community of food people who appreciate tradition, quality, and creativity.</p>
+       <h2>Vision</h2>    
+      <p>Onigashima's Cuisine's mission is to become the leading seller of Japanese culinary delights, both locally and globally. We seek to 
+    provide outstanding dining experiences, creating a passion for Japanese cuisine in our customers while always expanding our products to meet changing tastes and preferences.</p>
+</div>  
+</p>
+    
+    <script> const productLink = document.getElementById("product-link");
+        const paymentLink = document.getElementById("payment-link");
+        const contactLink = document.getElementById("contact-link");
+        const aboutLink = document.getElementById("about-link");
+        
+        productLink.addEventListener("click", checkLogin);
+        paymentLink.addEventListener("click", checkLogin);
+        contactLink.addEventListener("click", checkLogin);
+        aboutLink.addEventListener("click", checkLogin);
+        
+        function checkLogin(event) {
+          const isLoggedIn = checkIfLoggedIn();
+        
+          if (!isLoggedIn) {
+            
+            alert("Please Log-In First.");
+            open("login.html");
+          }
+        }
+        
+        function checkIfLoggedIn() {
+        }</script>
+</body>
+
+</html

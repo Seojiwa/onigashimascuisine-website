@@ -1,0 +1,44 @@
+
+
+body {
+    background-color:wheat;
+        height: 100px;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .content h3{
+        background-color:beige;
+    }
+    .sidebar {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: lightcoral;
+        padding-top: 20px;
+    }
+    
+    .sidebar a {
+        padding: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+    }
+    
+    .sidebar a:hover {
+        background-color: aquamarine;
+    }
+    
+    .content {
+        margin-left: 220px;
+        padding: 20px;
+        
+    }
+   ul{
+    text-align: left;
+   }
+   
+
+    
